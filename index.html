@@ -5,49 +5,113 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<title>Shekinah landing page</title>
-	<link href="https://fonts.googleapis.com/css?family=Barlow:500i,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/app.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Barlow:500i,900&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/app.css"> -->
+<!-- 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<style>
-		
+
 
 	</style>
 </head>
 
 <body class="">
 	<div class="loader"></div>
-	<a class="navigation" href="#">NK</a>
-	<div class="contentLinks">
-			
-	</div>
-	<div class="row container mainHeader hide-body">
-		<p><a href="#" data-toggle="modal" data-target="#talentModal">Talent</a></p>
-		<p><a data-toggle="modal" data-target="#worksModal">Works</a></p>
-	</div>
-
-		
-
-	<!-- modals -->
-
-	<div class="modal fade" id="talentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-    	<h1>CONTENT GOES HERE</h1>
-	
-  </div>
-</div>
-
-<div class="modal fade" id="worksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<!-- My Story modal -->
+	<div class="modal fade" id="storyModal" tabindex="-1" role="dialog" aria-labelledby="storyModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modalHeader">
+
+					<!-- <a href="#" ></a>	 -->
+					<h1>MY STORY</h1>
+				</div>
+				<div class="mainContent row">
+				<div class="col-md-6 bgImage">	
+
+				</div>
+				<div class="col-md-6">
+				<h1>Yerr, dis kak</h1>
+				<div class="row">	
+					<div class="col-md-6">
+						"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+					</div>
+					<div class="col-md-6">
+						"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+					</div>
+				</div>
+			</div>	
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
+
+<!-- talent Modal -->
+	<div class="modal fade" id="talentModal" tabindex="-1" role="dialog" aria-labelledby="storyModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modalHeader">
+					<h1>Talents</h1>
+				</div>
+				<div class="mainContent row">
+			
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- works Modal -->
+	<div class="modal fade" id="worksModal" tabindex="-1" role="dialog" aria-labelledby="storyModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modalHeader">
+					<h1>Bookings</h1>
+				</div>
+				<div class="mainContent row">
+					<form method="POST" action="https://www.briskforms.com/go/1fb341a688453d73c74f3eb040185803">
+						<div class="form-group">
+							<input type="text" class="form-control" name="Name" placeholder="What's your name">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						</div>
+						<button type="submit" class="btn btn-primary submitBtn" value="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- <div class="loader"></div> -->
+	<a class="navigation" href="#" data-toggle="modal" data-target="#storyModal">NK</a>
+	<div class="row container mainHeader hide-body">
+		<div><a href="#" data-toggle="modal" data-target="#talentModal">Talent</a></div>
+		<div><a href="#" data-toggle="modal" data-target="#worksModal">Works</a></div>
+	</div>
+
 <!-- scripts -->
 <script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript">
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$('.navigation').on("click", function(e){
+
+		})
+		$('#storyModal').on('shown.bs.modal', function () {
+			console.log('modal shown');
+		})
+		
 		
 	</script>
 </body>

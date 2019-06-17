@@ -23,10 +23,8 @@ $(".mainHeader").mousemove(function(e){
           $('.mainHeader').css("background-position", newvalueX+"px     "+newvalueY+"px");
 });
 
+
+
+
 	
 })
-
-
-$(document).ready(function() {
-
-});
